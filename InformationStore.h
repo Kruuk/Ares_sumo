@@ -4,6 +4,8 @@
 class InformationStore
 {
   public:
+    void setCondition(int Condition);
+    int getCondition();
     void setAnalogRightD(int analogRight);
     int getAnalogRightD();
 
@@ -20,6 +22,7 @@ class InformationStore
     bool getDigitLeftD();
     
   private:
+    int condition;
     int analogRightD;
     int analogLeftD;
     bool digitRightD;
