@@ -4,8 +4,12 @@
 class InformationStore
 {
   public:
+    void setDeltatime(long long int deltaTime);
+    long long int getDeltaTime();
+    
     void setCondition(int Condition);
     int getCondition();
+    
     void setAnalogRightD(int analogRight);
     int getAnalogRightD();
 
@@ -22,6 +26,7 @@ class InformationStore
     bool getDigitLeftD();
     
   private:
+    long long int DeltaTime;
     int condition;
     int analogRightD;
     int analogLeftD;
